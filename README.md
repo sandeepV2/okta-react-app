@@ -48,6 +48,8 @@ npm run start
 
 You would be redirected to http://localhost:3000
 
+![alt text](https://github.com/sandeepV2/okta-react-app/blob/main/okta_react_app.png)
+
 
 # Getting Started with Create React App
 
