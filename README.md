@@ -27,6 +27,19 @@ okta apps create --app-name=<sample app>
     * Post Logout Redirect URI(s) select the default option, http://localhost:3000 
 
 3. Make note of the application configuration printed to the terminal as you use the Client ID and Issuer to configure your SPA.
+
+### Cross check the created app by loggin into https://developer.okta.com/ 
+
+The app configuration should look like.
+
+1. General settings.
+
+![alt general_settings_image](https://github.com/sandeepV2/okta-react-app/blob/main/okta_gen_settings.png)
+
+2. Redirect URLs.
+
+![alt redirect_url_image](https://github.com/sandeepV2/okta-react-app/blob/main/okta_urls.png)
+
  
 ### Adding okta configs in a React App.
 
