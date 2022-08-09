@@ -21,24 +21,27 @@ Okta configurations would be saved in the home directory(at path).
 okta apps create --app-name=<sample app>
 ```
 1. Enter Quickstart when prompted for the app name.
+
 2. Specify the required redirect URI values:
     * Redirect URI: http://localhost:3000/login/callback
     * Post Logout Redirect URI(s) select the default option, http://localhost:3000 
+
 3. Make note of the application configuration printed to the terminal as you use the Client ID and Issuer to configure your SPA.
  
-### Create a React App.
+### Adding okta configs in a React App.
 
-Create a new project and add required packages.
+Update the okta auth config fiels in src/App.js
 ```
-npx create-react-app@5 okta-react-quickstart
-cd okta-react-quickstart
+const oktaAuth = new OktaAuth({
+  issuer: 'https://${dev-xxxxx.okta.com}/oauth2/default',
+  clientId: 'XXXXXXXXXXXXXX',
 ```
 
 This project is created using create-react bootstrap.
 It can be setup on local setup to test the okta integration.
 
 ```
-cd okta-react-quickstart
+cd okta-react-app
 npm install
 npm run start
 ```
